@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+Template Name: Skaxis
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>TraFreak</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{{ url_for('static', filename='layout/styles/layout.css') }}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay light" style="background-image:url('images/demo/backgrounds/01.png');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        <h1><a href="/">TraFreak</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a class="drop" href="#">Our Products</a>
+            <ul>
+              <li><a href="/lanepage">Lane Detection</a></li>
+              <li><a href="/signpage">Sign Detection</a></li>
+              <li><a href="/vehiclepage">Vehicle Detection</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="flexslider basicslider">
+        <li>
+          <article>
+            <h3 class="heading">Lane Detection</h3>
+	    <p>a lane is part of a roadway (carriageway) that is designated to be used by a single line of vehicles, to control and guide drivers and reduce traffic conflicts. Most public roads (highways) have at least two lanes, one for traffic in each direction, separated by lane markings. On multilane roadways and busier two-lane roads, lanes are designated with road surface markings. Major highways often have two multi-lane roadways separated by a median.
+	Some roads and bridges that carry very low volumes of traffic are less than 4.6 metres (15 ft) wide, and are only a single lane wide. Vehicles travelling in opposite directions must slow or stop to pass each other. In rural areas, these are often called country lanes. In urban areas, alleys are often only one lane wide. Urban and suburban one lane roads are often designated for one-way traffic. </p>
+          </article>
+        </li>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper">
+  <div class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <figure id="introblocks">
+	<center>
+      <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2019/10/1024/512/auto2.jpg?ve=1&tl=1" alt="your image"  />
+	</center>
+    </figure>
+  
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
+	<center>
+		<h1>Enter the Video Here...</h1>
+		<form id="upload-form" action="{{ url_for('laneupload') }}" method="POST" enctype="multipart/form-data">
+			<input type="file" name="file" accept="video/*"><br>
+			<input type="submit" value="send">
+		</form>
+	</center>
+<!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Cline Mandar Siddharth</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>
